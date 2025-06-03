@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MPF CABA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      /* Imagen de fondo */
+      background-image: url('https://res.cloudinary.com/du83pwamg/image/upload/v1748360491/Bg_Mpf_s9jx0h.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    /* Quitamos el triángulo nativo de <summary> */
+    summary {
+      list-style: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="relative min-h-screen font-sans">
+
+  <!-- Overlay oscuro -->
+  <div class="absolute inset-0 bg-black/50 z-0"></div>
+
+  <!-- Contenedor principal -->
+  <div class="relative z-10 flex flex-col items-center justify-start min-h-screen px-4 pt-12 pb-28 text-white">
+
+    <!-- Encabezado con crop circle para logo -->
+    <header class="mb-4 flex flex-col items-center">
+      <!-- Aquí ponés la URL de tu logo dentro de src -->
+      <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-white/50 mb-4 p-2">
+        <img
+          src="https://res.cloudinary.com/dnf5pehhx/image/upload/v1748877084/LOGO_MPF_CABA_2020_Logo01_h8ig1b.png"
+          alt="Logo MPF"
+          class="w-full h-full object-contain"
+        />
+      </div>
+      <h1 class="text-2xl font-bold tracking-wide">@Mpfcaba</h1>
+    </header>
+
+    <!-- Barra de redes sociales bajo el encabezado -->
+    <div class="flex items-center justify-center gap-6 mb-8">
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@mpf.caba" target="_blank" class="hover:opacity-80 transition">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"
+             alt="TikTok" class="w-6 h-6 invert" />
+      </a>
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/@MPFCABA" target="_blank" class="hover:opacity-80 transition">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"
+             alt="YouTube" class="w-6 h-6 invert" />
+      </a>
+      <!-- Twitter -->
+      <a href="https://x.com/MPFCABA" target="_blank" class="hover:opacity-80 transition">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg"
+             alt="Twitter" class="w-6 h-6 invert" />
+      </a>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/mpfcaba" target="_blank" class="hover:opacity-80 transition">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+             alt="Facebook" class="w-6 h-6 invert" />
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/mpfcaba/" target="_blank" class="hover:opacity-80 transition">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+             alt="Instagram" class="w-6 h-6 invert" />
+      </a>
+    </div>
+
+    <!-- Botones principales (flecha “>” que se ilumina al hover) -->
+    <main class="w-full max-w-md space-y-4">
+
+      <!-- 1) Denuncias como menú desplegable -->
+      <details class="group w-full bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-lg transition">
+  <summary class="flex items-center justify-between px-4 py-3 cursor-pointer">
+    <!-- Flecha que se ilumina en hover o cuando está abierto -->
+    <div class="flex items-center">
+      <span class="mr-2 text-lg font-bold text-gray-300 group-open:text-white group-hover:text-white transition-transform duration-200 transform">
+        &gt;
+      </span>
+      <span class="font-medium text-gray-100 group-open:text-white">
+        Denuncias
+      </span>
+    </div>
+    <!-- Icono de flecha abajo/arriba -->
+    <svg
+      class="w-5 h-5 text-gray-200 group-open:text-white transform group-open:rotate-180 transition-transform duration-200"
+      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7" />
+    </svg>
+  </summary>
+
+  <!-- Submenú -->
+  <ul class="mt-2 backdrop-blur-md rounded-lg shadow-lg overflow-hidden">
+    <li>
+      <a
+        href="https://denuncias.fiscalias.gob.ar/en"
+        class="block w-full text-left px-4 py-3 text-gray-100 hover:bg-white/20 transition-colors"
+      >
+        Denuncia Online
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://mpfciudad.gob.ar/#map"
+        class="block w-full text-left px-4 py-3 border-t border-white/30 text-gray-100 hover:bg-white/20 transition-colors"
+      >
+        Denuncia Presencial. 8 a 15hs
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://mpfciudad.gob.ar/"
+        class="block w-full text-left px-4 py-3 border-t border-white/30 text-gray-100 hover:bg-white/20 transition-colors"
+      >
+        Por mail
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://mpfciudad.gob.ar/"
+        class="block w-full text-left px-4 py-3 border-t border-white/30 text-gray-100 hover:bg-white/20 transition-colors"
+      >
+        Denuncia telefónica
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://mpfciudad.gob.ar/"
+        class="block w-full text-left px-4 py-3 border-t border-white/30 text-gray-100 hover:bg-white/20 transition-colors"
+      >
+        Preguntas frecuentes
+      </a>
+    </li>
+  </ul>
+</details>
+
+      <!-- 2) NNyA -->
+      <a href="https://linktr.ee/mpfcaba.nnya"
+         class="group flex items-center w-full bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-3 rounded-lg transition">
+        <span class="text-lg font-bold text-gray-300 group-hover:text-white transition mr-2">&gt;</span>
+        <span class="font-medium">NNyA</span>
+      </a>
+
+      <!-- 3) Violencia de Género -->
+      <a href="https://linktr.ee/mpfcaba.genero"
+         class="group flex items-center w-full bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-3 rounded-lg transition">
+        <span class="text-lg font-bold text-gray-300 group-hover:text-white transition mr-2">&gt;</span>
+        <span class="font-medium">Violencia de Género</span>
+      </a>
+
+      <!-- 4) Venta de Drogas -->
+      <a href="https://linktr.ee/mpfcaba.ventadedrogas"
+         class="group flex items-center w-full bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-3 rounded-lg transition">
+        <span class="text-lg font-bold text-gray-300 group-hover:text-white transition mr-2">&gt;</span>
+        <span class="font-medium">Venta de Drogas</span>
+      </a>
+
+      <!-- 5) Ciberfraudes -->
+      <a href="TU_LINK_CIBERFRAUDE"
+         class="group flex items-center w-full bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-3 rounded-lg transition">
+        <span class="text-lg font-bold text-gray-300 group-hover:text-white transition mr-2">&gt;</span>
+        <span class="font-medium">Ciberfraudes</span>
+      </a>
+
+      <!-- 6) UFEMA -->
+      <a href="TU_LINK_UFEMA"
+         class="group flex items-center w-full bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-3 rounded-lg transition">
+        <span class="text-lg font-bold text-gray-300 group-hover:text-white transition mr-2">&gt;</span>
+        <span class="font-medium">UFEMA</span>
+      </a>
+
+      <!-- 7) Acceso a la Justicia -->
+      <a href="TU_LINK_ACCESO_JUSTICIA"
+         class="group flex items-center w-full bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-3 rounded-lg transition">
+        <span class="text-lg font-bold text-gray-300 group-hover:text-white transition mr-2">&gt;</span>
+        <span class="font-medium">Acceso a la Justicia</span>
+      </a>
+
+      <!-- 8) MPF + Cerca -->
+      <a href="TU_LINK_MASCERCA"
+         class="group flex items-center w-full bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-3 rounded-lg transition">
+        <span class="text-lg font-bold text-gray-300 group-hover:text-white transition mr-2">&gt;</span>
+        <span class="font-medium">MPF + Cerca</span>
+      </a>
+    </main>
+
+  </div>
+
+</body>
+</html>
